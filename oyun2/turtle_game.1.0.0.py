@@ -1,6 +1,6 @@
 import turtle as tr
 from random import randint as rd
-from playsound import playsound as py
+
 #for screen
 screen=tr.Screen()
 screen.screensize(600,600)
@@ -18,7 +18,7 @@ gamer.penup()
 speed=1
 score=0
 
-yazi_puan=turtle.Turtle()
+yazi_puan=tr.Turtle()
 yazi_puan.speed(0)
 yazi_puan.color("white")
 yazi_puan.shape("square")
@@ -27,9 +27,9 @@ yazi_puan.hideturtle()
 yazi_puan.goto(-200,200)
 yazi_puan.write(f"Puan {score}",align="center",font={"Arial-Black",24})
 
-speed_puan=turtle.Turtle()
+speed_puan=tr.Turtle()
 speed_puan.speed(0)
-speed_puan.color("white ")
+speed_puan.color("white")
 speed_puan.shape("square")
 speed_puan.penup()
 speed_puan.hideturtle()
@@ -60,7 +60,7 @@ screen.onkey(azalt,"Down")
 max_hedef=5
 hedefler=[]
 for i in range(5):
-    hedefler.append(turtle.Turtle())
+    hedefler.append(tr.Turtle())
     hedefler[i].penup()
     hedefler[i].shape("turtle")
     hedefler[i].color("green")
